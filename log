@@ -98,3 +98,20 @@ Thu 05 Oct 2023 04:15:10 PM UTC:
  tests:  2|4
 total_score: 15/70
 ab9e24d
+Thu 05 Oct 2023 04:22:22 PM UTC: 
+ sudoku.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:48:54: error: unused variable ‘subMatrizAux’ [-Werror=unused-variable]
+   48 |   int filaAux[9][10] = {0}, columnaAux[9][10] = {0}, subMatrizAux[9][10] = {0};
+      |                                                      ^~~~~~~~~~~~
+sudoku.c:48:29: error: unused variable ‘columnaAux’ [-Werror=unused-variable]
+   48 |   int filaAux[9][10] = {0}, columnaAux[9][10] = {0}, subMatrizAux[9][10] = {0};
+      |                             ^~~~~~~~~~
+sudoku.c:48:7: error: unused variable ‘filaAux’ [-Werror=unused-variable]
+   48 |   int filaAux[9][10] = {0}, columnaAux[9][10] = {0}, subMatrizAux[9][10] = {0};
+      |       ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+cdf7a2b

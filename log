@@ -56,3 +56,28 @@ sudoku.c:74:3: error: expected expression before ‘}’ token
       |   ^
 Compilation failed
 6cae9f2
+Thu 05 Oct 2023 04:14:19 PM UTC: 
+ sudoku.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:59:12: error: expected ‘)’ before ‘->’ token
+   59 |       int(n->sudo[fila][columna] == 0){
+      |            ^~
+      |            )
+sudoku.c:67:45: error: expected ‘)’ before ‘{’ token
+   67 |     if(filaVacia != -1 && columnaVacia != -1{
+      |       ~                                     ^
+      |                                             )
+sudoku.c:76:1: error: expected expression before ‘}’ token
+   76 | }
+      | ^
+sudoku.c:53:9: error: unused variable ‘list’ [-Werror=unused-variable]
+   53 |   List* list=createList();
+      |         ^~~~
+sudoku.c:76:1: error: control reaches end of non-void function [-Werror=return-type]
+   76 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+60108af

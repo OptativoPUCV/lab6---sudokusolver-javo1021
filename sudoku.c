@@ -63,7 +63,7 @@ List* get_adj_nodes(Node* n){
       }
     }
     if(filaVacia != -1) break;
-    
+  }
     if(filaVacia != -1 && columnaVacia != -1{
       for(int num = 1 ; num <= 9; num++){
         Node* new_node = copy(n);
@@ -71,7 +71,6 @@ List* get_adj_nodes(Node* n){
         pushBack(list, new_node);
       }
     }
-  }
   
   return list;
 }

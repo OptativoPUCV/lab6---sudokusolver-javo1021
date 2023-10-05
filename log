@@ -198,3 +198,9 @@ sudoku.c:48:7: error: unused variable ‘filaAux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 5969a36
+Thu 05 Oct 2023 05:48:33 PM UTC: 
+ sudoku.c | 21 ++++++++++++++++++++-
+ 1 file changed, 20 insertions(+), 1 deletion(-)
+ tests:  5|3
+total_score: 35/70
+d57e91b

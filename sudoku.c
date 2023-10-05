@@ -50,7 +50,26 @@ int is_valid(Node* n){
   for(int fila = 0; fila < 9 ; fila++){
     for(int columna = 0; columna < 9 ; columna ++){
       int num = n->sudo[fila][columna];
-      if(fila)
+      if(num != 0){
+        if(filaAux[fila][num] == 1){
+          return 0;
+        } else{
+          filaAux[fila][num] = 1;
+        }
+
+        if(columnaAux[columna][num] == 1){
+          return 0;
+        } else{
+          columnaAux[columna][num] = 1;
+        }
+        int subMatriz_i = 3 * (fila/3) + (columna / 3);
+        if(subMatrizAux[subMatriz_i][num] == 1){
+          return 0;
+        } else{
+          filaAux[fila][num] = 1;
+        }
+        
+      }
     }
   }
   return 1;

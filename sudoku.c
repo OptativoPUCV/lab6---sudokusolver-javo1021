@@ -49,8 +49,8 @@ int is_valid(Node* n){
 
   for(int fila = 0; fila < 9 ; fila++){
     for(int columna = 0; columna < 9 ; columna ++){
-      int num = sudo->[fila][columna];
-      if(filaAux)
+      int num = n->sudo[fila][columna];
+      if(fila)
     }
   }
   return 1;

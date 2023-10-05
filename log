@@ -38,3 +38,21 @@ sudoku.c:54:7: error: unused variable ‘filaVacia’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 8e70c89
+Thu 05 Oct 2023 04:14:02 PM UTC: 
+ sudoku.c | 13 +++++++++++--
+ 1 file changed, 11 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:59:12: error: expected ‘)’ before ‘->’ token
+   59 |       int(n->sudo[fila][columna] == 0){
+      |            ^~
+      |            )
+sudoku.c:67:45: error: expected ‘)’ before ‘{’ token
+   67 |     if(filaVacia != -1 && columnaVacia != -1{
+      |       ~                                     ^
+      |                                             )
+sudoku.c:74:3: error: expected expression before ‘}’ token
+   74 |   }
+      |   ^
+Compilation failed
+6cae9f2

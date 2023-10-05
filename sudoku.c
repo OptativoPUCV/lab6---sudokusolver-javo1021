@@ -56,10 +56,10 @@ List* get_adj_nodes(Node* n){
 
   for(int fila = 0; fila < 9; fila++){
     for(int columna = 0; columna < 9; columna++){
-      int(n->sudo[fila][columna] == 0){
+      if(n->sudo[fila][columna] == 0){
         filaVacia = fila;
         columnaVacia = columna;
-        break
+        break;
       }
     }
     if(filaVacia != -1) break;

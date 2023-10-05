@@ -2,3 +2,21 @@ Thu 05 Oct 2023 04:04:52 PM UTC:
  tests:  0|5
 total_score: 0/70
 5155c4b
+Thu 05 Oct 2023 04:10:37 PM UTC: 
+ sudoku.c | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:59:12: error: expected ‘)’ before ‘->’ token
+   59 |       int(n->sido[fila][columna] == 0){
+      |            ^~
+      |            )
+sudoku.c:55:7: error: unused variable ‘columnaVacia’ [-Werror=unused-variable]
+   55 |   int columnaVacia = -1;
+      |       ^~~~~~~~~~~~
+sudoku.c:54:7: error: unused variable ‘filaVacia’ [-Werror=unused-variable]
+   54 |   int filaVacia = -1;
+      |       ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3fc7c77

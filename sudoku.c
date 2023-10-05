@@ -51,7 +51,18 @@ int is_valid(Node* n){
 
 List* get_adj_nodes(Node* n){
   List* list=createList();
+  int filaVacia = -1;
+  int columnaVacia = -1;
 
+  for(int fila = 0; fila < 9; fila++){
+    for(int columna = 0; columna < 9; columna++){
+      int(n->sido[fila][columna] == 0){
+        fila_vacia = fila;
+        columna_vacia = columna;
+        break
+      }
+    }
+  }
   
   return list;
 }

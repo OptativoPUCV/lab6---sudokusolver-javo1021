@@ -142,3 +142,36 @@ sudoku.c:48:7: error: unused variable ‘filaAux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 03f6673
+Thu 05 Oct 2023 05:44:31 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:52:17: error: ‘sudo’ undeclared (first use in this function)
+   52 |       int num = sudo->[fila][columna];
+      |                 ^~~~
+sudoku.c:52:17: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:52:23: error: expected identifier before ‘[’ token
+   52 |       int num = sudo->[fila][columna];
+      |                       ^
+sudoku.c:53:10: error: the address of ‘filaAux’ will always evaluate as ‘true’ [-Werror=address]
+   53 |       if(filaAux)
+      |          ^~~~~~~
+sudoku.c:54:5: error: expected expression before ‘}’ token
+   54 |     }
+      |     ^
+sudoku.c:52:11: error: unused variable ‘num’ [-Werror=unused-variable]
+   52 |       int num = sudo->[fila][columna];
+      |           ^~~
+sudoku.c:48:54: error: unused variable ‘subMatrizAux’ [-Werror=unused-variable]
+   48 |   int filaAux[9][10] = {0}, columnaAux[9][10] = {0}, subMatrizAux[9][10] = {0};
+      |                                                      ^~~~~~~~~~~~
+sudoku.c:48:29: error: unused variable ‘columnaAux’ [-Werror=unused-variable]
+   48 |   int filaAux[9][10] = {0}, columnaAux[9][10] = {0}, subMatrizAux[9][10] = {0};
+      |                             ^~~~~~~~~~
+sudoku.c:48:7: error: variable ‘filaAux’ set but not used [-Werror=unused-but-set-variable]
+   48 |   int filaAux[9][10] = {0}, columnaAux[9][10] = {0}, subMatrizAux[9][10] = {0};
+      |       ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ef0542b

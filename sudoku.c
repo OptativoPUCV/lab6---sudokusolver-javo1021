@@ -48,7 +48,7 @@ int is_valid(Node* n){
   int filaAux[9][10] = {0}, columnaAux[9][10] = {0}, subMatrizAux[9][10] = {0};
 
   for(int fila = 0; fila < 9 ; fila++){
-    dor(int columna = 0; columna < 9 ; columna ++){
+    for(int columna = 0; columna < 9 ; columna ++){
       int num = sudo->[fila][columna];
       if(filaAux)
     }

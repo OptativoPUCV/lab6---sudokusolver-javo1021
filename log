@@ -115,3 +115,30 @@ sudoku.c:48:7: error: unused variable ‘filaAux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 cdf7a2b
+Thu 05 Oct 2023 04:23:51 PM UTC: 
+ sudoku.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:51:5: error: implicit declaration of function ‘dor’ [-Werror=implicit-function-declaration]
+   51 |     dor(int columna = 0; columna < 9 ; columna ++){
+      |     ^~~
+sudoku.c:51:9: error: expected expression before ‘int’
+   51 |     dor(int columna = 0; columna < 9 ; columna ++){
+      |         ^~~
+sudoku.c:51:51: error: expected ‘;’ before ‘{’ token
+   51 |     dor(int columna = 0; columna < 9 ; columna ++){
+      |                                                   ^
+      |                                                   ;
+sudoku.c:48:54: error: unused variable ‘subMatrizAux’ [-Werror=unused-variable]
+   48 |   int filaAux[9][10] = {0}, columnaAux[9][10] = {0}, subMatrizAux[9][10] = {0};
+      |                                                      ^~~~~~~~~~~~
+sudoku.c:48:29: error: unused variable ‘columnaAux’ [-Werror=unused-variable]
+   48 |   int filaAux[9][10] = {0}, columnaAux[9][10] = {0}, subMatrizAux[9][10] = {0};
+      |                             ^~~~~~~~~~
+sudoku.c:48:7: error: unused variable ‘filaAux’ [-Werror=unused-variable]
+   48 |   int filaAux[9][10] = {0}, columnaAux[9][10] = {0}, subMatrizAux[9][10] = {0};
+      |       ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+03f6673

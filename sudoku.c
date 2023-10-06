@@ -66,7 +66,7 @@ int is_valid(Node* n){
         if(subMatrizAux[subMatriz_i][num] == 1){
           return 0;
         } else{
-          filaAux[fila][num] = 1;
+          subMatrizAux[fila][num] = 1;
         }
         
       }

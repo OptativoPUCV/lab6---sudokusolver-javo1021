@@ -97,8 +97,7 @@ List* get_adj_nodes(Node* n){
       for(int num = 1 ; num <= 9; num++){
         Node* new_node = copy(n);
         new_node->sudo[filaVacia][columnaVacia] = num;
-
-
+        
         if(is_valid(new_node)){
           pushBack(list,new_node);
         }else{
@@ -112,7 +111,12 @@ List* get_adj_nodes(Node* n){
 
 
 int is_final(Node* n){
-    return 0;
+  for(int fila = 0; fila < 9 ; fila++){
+    for(int columna = 0; columna < 9 ; fila++){
+      if(n->sudo[fila][columna] == 0) return 0;
+    }
+  }
+  return 1;
 }
 
 Node* DFS(Node* initial, int* cont){

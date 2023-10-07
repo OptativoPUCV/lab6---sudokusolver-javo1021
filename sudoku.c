@@ -120,7 +120,18 @@ int is_final(Node* n){
 }
 
 Node* DFS(Node* initial, int* cont){
-  return NULL;
+
+  Stack* S = createStack();
+  push(S, initial);
+
+  whule(!is_empty(S)){
+
+    return;
+  }
+
+
+
+  return,
 }
 
 

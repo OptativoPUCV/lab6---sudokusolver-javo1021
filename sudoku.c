@@ -137,7 +137,12 @@ Node* DFS(Node* initial, int* cont){
         }
       }
     }
-
+    if(fina){
+      return NodoTop;
+    }
+    //Si no es final hay que buscar adyacentes
+    List* nodosAD = get_adj_nodes(NodoTop);
+    Nodo* NodoAd = first(nodosAd);
     
   }
 

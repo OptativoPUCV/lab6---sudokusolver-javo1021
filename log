@@ -269,3 +269,30 @@ Sun 08 Oct 2023 12:22:30 AM UTC:
  tests:  7|1
 total_score: 55/70
 d56721d
+Sun 08 Oct 2023 12:26:20 AM UTC: 
+ sudoku.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:140:8: error: ‘fina’ undeclared (first use in this function); did you mean ‘final’?
+  140 |     if(fina){
+      |        ^~~~
+      |        final
+sudoku.c:140:8: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:145:5: error: unknown type name ‘Nodo’; did you mean ‘Node’?
+  145 |     Nodo* NodoAd = first(nodosAd);
+      |     ^~~~
+      |     Node
+sudoku.c:145:26: error: ‘nodosAd’ undeclared (first use in this function); did you mean ‘nodosAD’?
+  145 |     Nodo* NodoAd = first(nodosAd);
+      |                          ^~~~~~~
+      |                          nodosAD
+sudoku.c:145:11: error: unused variable ‘NodoAd’ [-Werror=unused-variable]
+  145 |     Nodo* NodoAd = first(nodosAd);
+      |           ^~~~~~
+sudoku.c:144:11: error: unused variable ‘nodosAD’ [-Werror=unused-variable]
+  144 |     List* nodosAD = get_adj_nodes(NodoTop);
+      |           ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e1abf0a

@@ -66,7 +66,7 @@ int is_valid(Node* n){
         if(subMatrizAux[subMatriz_i][num] == 1){
           return 0;
         } else{
-          subMatrizAux[fila][num] = 1;
+          subMatrizAux[subMatriz_i][num] = 1;
         }
         
       }
@@ -157,7 +157,7 @@ Node* DFS(Node* initial, int* cont){
 
 
 
-
+/*
 int main( int argc, char *argv[] ){
 
   Node* initial= read_file("s12a.txt");;
@@ -168,4 +168,4 @@ int main( int argc, char *argv[] ){
   print_node(final);
 
   return 0;
-}
+}*/

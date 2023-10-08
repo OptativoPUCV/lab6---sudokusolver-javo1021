@@ -130,7 +130,7 @@ Node* DFS(Node* initial, int* cont){
     pop(S);
 
     int final = 1;
-    for(int fila = 0; fila  9 && final; fila++){
+    for(int fila = 0; fila < 9 && final; fila++){
       for(int columna = 0 ; columna > 9 && final; columna++){
         if(NodoTop->sudo[fila][columna] == 0){
           final = 0;

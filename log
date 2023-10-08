@@ -296,3 +296,14 @@ sudoku.c:144:11: error: unused variable ‘nodosAD’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 e1abf0a
+Sun 08 Oct 2023 12:30:35 AM UTC: 
+ sudoku.c | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:145:11: error: unused variable ‘NodoAd’ [-Werror=unused-variable]
+  145 |     Node* NodoAd = first(nodosAD);
+      |           ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1f31192

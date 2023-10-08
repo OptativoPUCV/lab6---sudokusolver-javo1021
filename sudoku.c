@@ -129,20 +129,20 @@ Node* DFS(Node* initial, int* cont){
     Node* NodoTop = top(S);
     pop(S);
 
-    int final = 1;
-    for(int fila = 0; fila < 9 && final; fila++){
-      for(int columna = 0 ; columna > 9 && final; columna++){
+    int finall = 1;
+    for(int fila = 0; fila < 9 && finall; fila++){
+      for(int columna = 0 ; columna > 9 && finall; columna++){
         if(NodoTop->sudo[fila][columna] == 0){
-          final = 0;
+          finall = 0;
         }
       }
     }
-    if(fina){
+    if(finall){
       return NodoTop;
     }
     //Si no es final hay que buscar adyacentes
     List* nodosAD = get_adj_nodes(NodoTop);
-    Nodo* NodoAd = first(nodosAd);
+    Node* NodoAd = first(nodosAD);
     
   }
 

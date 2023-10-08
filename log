@@ -348,3 +348,14 @@ Sun 08 Oct 2023 12:44:31 AM UTC:
  tests:  7|1
 total_score: 55/70
 a114f88
+Sun 08 Oct 2023 12:44:48 AM UTC: 
+ sudoku.c | 3 ---
+ 1 file changed, 3 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:155:1: error: control reaches end of non-void function [-Werror=return-type]
+  155 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+cdbbd10

@@ -252,3 +252,14 @@ sudoku.c:135:1: error: control reaches end of non-void function [-Werror=return-
 cc1: all warnings being treated as errors
 Compilation failed
 d9156d4
+Sun 08 Oct 2023 12:22:21 AM UTC: 
+ sudoku.c | 18 +++++++++++++++---
+ 1 file changed, 15 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:133:27: error: expected ‘;’ before numeric constant
+  133 |     for(int fila = 0; fila  9 && final; fila++){
+      |                           ^ ~
+      |                           ;
+Compilation failed
+1457987

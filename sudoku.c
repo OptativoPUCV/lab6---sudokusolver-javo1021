@@ -143,6 +143,11 @@ Node* DFS(Node* initial, int* cont){
     //Si no es final hay que buscar adyacentes
     List* nodosAD = get_adj_nodes(NodoTop);
     Node* NodoAd = first(nodosAD);
+
+    while(NodoAd){
+      push(S,, NodoAd);
+      NodoAd = next(nodosAD);
+    }
     
   }
 

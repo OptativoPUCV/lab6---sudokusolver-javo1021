@@ -145,7 +145,7 @@ Node* DFS(Node* initial, int* cont){
     Node* NodoAd = first(nodosAD);
 
     while(NodoAd){
-      push(S,, NodoAd);
+      push(S, NodoAd);
       NodoAd = next(nodosAD);
     }
     

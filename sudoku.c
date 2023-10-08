@@ -151,7 +151,7 @@ Node* DFS(Node* initial, int* cont){
     }
     free(NodoTop);
   }
-
+  return NULL;
 }
 
 

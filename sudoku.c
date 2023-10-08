@@ -123,6 +123,7 @@ Node* DFS(Node* initial, int* cont){
   
   Stack* S = createStack();
   push(S, initial);
+  *cont = 0;
   while(!is_empty(S)){
     (*cont)++;
 

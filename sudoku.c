@@ -148,7 +148,7 @@ Node* DFS(Node* initial, int* cont){
       push(S, NodoAd);
       NodoAd = next(nodosAD);
     }
-    
+    free(NodoTop);
   }
 
 
